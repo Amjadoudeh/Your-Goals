@@ -1,13 +1,6 @@
-//
-//  ViewController.swift
-//  your goals
-//
-//  Created by Amajd Oudeh on 19.06.22.
-//
-
 import UIKit
 
-class ViewController: UIViewController {
+class GoalsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
