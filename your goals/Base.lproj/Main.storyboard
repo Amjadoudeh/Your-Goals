@@ -40,6 +40,9 @@
                                         <rect key="frame" x="340" y="44.5" width="59" height="46"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="addGoal"/>
+                                        <connections>
+                                            <action selector="addGoalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEJ-Uz-M0P"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098039215684" green="0.73725490196078436" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -98,6 +101,9 @@
                             <constraint firstItem="yM2-xj-tmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uth-NW-x9p"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="jc9-Zl-2Bx" id="MtV-Ub-2nu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
