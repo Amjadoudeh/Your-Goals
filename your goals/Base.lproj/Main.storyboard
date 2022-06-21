@@ -36,19 +36,46 @@
                                             </label>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Bt-a6-yhz">
+                                        <rect key="frame" x="340" y="44.5" width="59" height="46"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" image="addGoal"/>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098039215684" green="0.73725490196078436" blue="0.38823529411764707" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
+                                    <constraint firstItem="3Bt-a6-yhz" firstAttribute="centerY" secondItem="mnn-WR-qsJ" secondAttribute="centerY" id="Qru-bV-Qn7"/>
+                                    <constraint firstAttribute="trailing" secondItem="3Bt-a6-yhz" secondAttribute="trailing" constant="15" id="XPn-9d-yey"/>
                                     <constraint firstAttribute="bottom" secondItem="mnn-WR-qsJ" secondAttribute="bottom" constant="10" id="dRo-kX-3Vu"/>
                                     <constraint firstAttribute="height" constant="90" id="ju7-yj-7MI"/>
                                     <constraint firstItem="mnn-WR-qsJ" firstAttribute="centerX" secondItem="yM2-xj-tmJ" secondAttribute="centerX" id="nM4-bg-7JJ"/>
+                                    <constraint firstItem="3Bt-a6-yhz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="mnn-WR-qsJ" secondAttribute="trailing" constant="8" symbolic="YES" id="w8t-MG-W7v"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="A1n-Nv-u8E">
+                                <rect key="frame" x="97.5" y="190" width="219.5" height="53.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to Your Goals" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9hZ-YU-QJb">
+                                        <rect key="frame" x="0.0" y="0.0" width="219.5" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="To begin, create a goal" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Zu-Aw-N1d">
+                                        <rect key="frame" x="0.0" y="28.5" width="219.5" height="25"/>
+                                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="yM2-xj-tmJ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="4yv-nL-pvL"/>
+                            <constraint firstItem="A1n-Nv-u8E" firstAttribute="top" secondItem="yM2-xj-tmJ" secondAttribute="bottom" constant="100" id="Ete-qL-4rc"/>
+                            <constraint firstItem="A1n-Nv-u8E" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="e9i-rk-RGM"/>
                             <constraint firstItem="yM2-xj-tmJ" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="hQi-sO-0oJ"/>
                             <constraint firstItem="yM2-xj-tmJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="uth-NW-x9p"/>
                         </constraints>
@@ -60,6 +87,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="addGoal" width="35" height="32"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
