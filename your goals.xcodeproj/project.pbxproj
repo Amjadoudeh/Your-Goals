@@ -17,6 +17,7 @@
 		D078D1E2285FCB890019C4F0 /* your_goalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1E1285FCB890019C4F0 /* your_goalsTests.swift */; };
 		D078D1EC285FCB890019C4F0 /* your_goalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1EB285FCB890019C4F0 /* your_goalsUITests.swift */; };
 		D078D1EE285FCB890019C4F0 /* your_goalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1ED285FCB890019C4F0 /* your_goalsUITestsLaunchTests.swift */; };
+		D0D77F3D2861F2B400114046 /* GoalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D77F3C2861F2B400114046 /* GoalViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D078D1E7285FCB890019C4F0 /* your goalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "your goalsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D078D1EB285FCB890019C4F0 /* your_goalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = your_goalsUITests.swift; sourceTree = "<group>"; };
 		D078D1ED285FCB890019C4F0 /* your_goalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = your_goalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		D0D77F3C2861F2B400114046 /* GoalViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +146,7 @@
 		D078D1FB285FCBB40019C4F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D0D77F3C2861F2B400114046 /* GoalViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D078D1CC285FCB880019C4F0 /* GoalsViewController.swift in Sources */,
+				D0D77F3D2861F2B400114046 /* GoalViewCell.swift in Sources */,
 				D078D1C8285FCB880019C4F0 /* AppDelegate.swift in Sources */,
 				D078D1CA285FCB880019C4F0 /* SceneDelegate.swift in Sources */,
 				D078D1D2285FCB880019C4F0 /* your_goals.xcdatamodeld in Sources */,
