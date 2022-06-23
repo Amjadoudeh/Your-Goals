@@ -7,7 +7,6 @@ class GoalsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
         tableView.isHidden = false
@@ -32,7 +31,7 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "goalCell") as? GoalCell else {
             return UITableViewCell()
         }
-        cell.configureCell(description: "Eat Salad twice a week", type: "short term", goalProgressAmount: 2)
+        cell.configureCell(description: "Eat Salad twice a week", type: GoalType.ShortTerm , goalProgressAmount: 2)
         return cell
     }
 
