@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00DB1342864AE720010EADC /* GoalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00DB1332864AE720010EADC /* GoalType.swift */; };
 		D078D1C8285FCB880019C4F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1C7285FCB880019C4F0 /* AppDelegate.swift */; };
 		D078D1CA285FCB880019C4F0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1C9285FCB880019C4F0 /* SceneDelegate.swift */; };
 		D078D1CC285FCB880019C4F0 /* GoalsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1CB285FCB880019C4F0 /* GoalsViewController.swift */; };
@@ -17,7 +18,7 @@
 		D078D1E2285FCB890019C4F0 /* your_goalsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1E1285FCB890019C4F0 /* your_goalsTests.swift */; };
 		D078D1EC285FCB890019C4F0 /* your_goalsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1EB285FCB890019C4F0 /* your_goalsUITests.swift */; };
 		D078D1EE285FCB890019C4F0 /* your_goalsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D078D1ED285FCB890019C4F0 /* your_goalsUITestsLaunchTests.swift */; };
-		D0D77F3D2861F2B400114046 /* GoalViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D77F3C2861F2B400114046 /* GoalViewCell.swift */; };
+		D0D77F3D2861F2B400114046 /* GoalCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0D77F3C2861F2B400114046 /* GoalCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00DB1332864AE720010EADC /* GoalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalType.swift; sourceTree = "<group>"; };
 		D078D1C4285FCB880019C4F0 /* your goals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "your goals.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D078D1C7285FCB880019C4F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D078D1C9285FCB880019C4F0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -52,7 +54,7 @@
 		D078D1E7285FCB890019C4F0 /* your goalsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "your goalsUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D078D1EB285FCB890019C4F0 /* your_goalsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = your_goalsUITests.swift; sourceTree = "<group>"; };
 		D078D1ED285FCB890019C4F0 /* your_goalsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = your_goalsUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		D0D77F3C2861F2B400114046 /* GoalViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewCell.swift; sourceTree = "<group>"; };
+		D0D77F3C2861F2B400114046 /* GoalCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,7 @@
 		D078D1FB285FCBB40019C4F0 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				D0D77F3C2861F2B400114046 /* GoalViewCell.swift */,
+				D0D77F3C2861F2B400114046 /* GoalCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -154,6 +156,7 @@
 		D078D1FC285FCBCF0019C4F0 /* Enums */ = {
 			isa = PBXGroup;
 			children = (
+				D00DB1332864AE720010EADC /* GoalType.swift */,
 			);
 			path = Enums;
 			sourceTree = "<group>";
@@ -318,7 +321,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D078D1CC285FCB880019C4F0 /* GoalsViewController.swift in Sources */,
-				D0D77F3D2861F2B400114046 /* GoalViewCell.swift in Sources */,
+				D0D77F3D2861F2B400114046 /* GoalCell.swift in Sources */,
+				D00DB1342864AE720010EADC /* GoalType.swift in Sources */,
 				D078D1C8285FCB880019C4F0 /* AppDelegate.swift in Sources */,
 				D078D1CA285FCB880019C4F0 /* SceneDelegate.swift in Sources */,
 				D078D1D2285FCB880019C4F0 /* your_goals.xcdatamodeld in Sources */,

@@ -1,6 +1,6 @@
 import UIKit
 
-class GoalViewCell: UITableViewCell {
+class GoalCell: UITableViewCell {
 
     @IBOutlet weak var goalTypeLabel: UILabel!
     @IBOutlet weak var goalDescriptionLabel: UILabel!
