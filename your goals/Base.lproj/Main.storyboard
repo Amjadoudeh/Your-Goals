@@ -226,6 +226,14 @@
                                     <constraint firstItem="yi7-Ss-Dqm" firstAttribute="top" secondItem="sOg-st-Wvi" secondAttribute="top" constant="44" id="bqU-9z-P1A"/>
                                 </constraints>
                             </view>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="What is your goal? " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Yu-W9-lAb">
+                                <rect key="frame" x="16" y="116" width="358" height="195"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="crE-gS-kZV"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -238,7 +246,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="80j-Ii-5uE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="857" y="77"/>
+            <point key="canvasLocation" x="856.92307692307691" y="76.777251184834114"/>
         </scene>
     </scenes>
     <resources>
