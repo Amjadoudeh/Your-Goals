@@ -11,7 +11,7 @@
         <!--Goals View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="GoalsViewController" customModule="your_goals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GoalViewController" id="BYZ-38-t0r" customClass="GoalsViewController" customModule="your_goals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,6 @@
                                         <buttonConfiguration key="configuration" style="plain" image="addGoal"/>
                                         <connections>
                                             <action selector="addGoalButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="IEJ-Uz-M0P"/>
-                                            <segue destination="P5z-qc-9As" kind="presentation" id="0Uq-zj-KFa"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -184,9 +183,9 @@
         <!--Create GoalVC View Controller-->
         <scene sceneID="gfe-Ly-Yys">
             <objects>
-                <viewController id="P5z-qc-9As" customClass="CreateGoalVCViewController" customModule="your_goals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreateGoalViewController" id="P5z-qc-9As" customClass="CreateGoalVCViewController" customModule="your_goals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6zP-Me-vxQ">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sOg-st-Wvi">
@@ -290,7 +289,7 @@
                                 </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7r-uE-OJd">
-                                <rect key="frame" x="0.0" y="740" width="390" height="50"/>
+                                <rect key="frame" x="0.0" y="760" width="390" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="NMG-8P-5tB"/>
                                 </constraints>
