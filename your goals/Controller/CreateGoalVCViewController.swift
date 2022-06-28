@@ -1,10 +1,3 @@
-//
-//  CreateGoalVCViewController.swift
-//  your goals
-//
-//  Created by Amajd Oudeh on 27.06.22.
-//
-
 import UIKit
 
 class CreateGoalVCViewController: UIViewController {

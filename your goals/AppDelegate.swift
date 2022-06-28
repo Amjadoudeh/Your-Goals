@@ -1,10 +1,3 @@
-//
-//  AppDelegate.swift
-//  your goals
-//
-//  Created by Amajd Oudeh on 19.06.22.
-//
-
 import UIKit
 import CoreData
 
