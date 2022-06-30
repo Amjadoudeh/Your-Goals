@@ -150,6 +150,7 @@
                                         <connections>
                                             <outlet property="goalDescriptionLabel" destination="4M1-OX-WBU" id="kiP-mm-tmN"/>
                                             <outlet property="goalProgressLabel" destination="Uby-uU-zOj" id="PZe-Ra-usO"/>
+                                            <outlet property="goalStackView" destination="g56-Cj-jmb" id="L1u-WD-Par"/>
                                             <outlet property="goalTypeLabel" destination="gNk-FA-PkC" id="i5n-Y4-ljH"/>
                                         </connections>
                                     </tableViewCell>

@@ -11,7 +11,8 @@ class GoalsViewController: UIViewController {
         tableView.delegate = self
         tableView.dataSource = self
         tableView.isHidden = false
-        tableView.rowHeight = 65.0
+        tableView.rowHeight = 80.0
+
     }
 
     @IBAction func addGoalButton(_ sender: Any) {
