@@ -11,13 +11,13 @@ class CreateGoalVCViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        nextButton.bindToKeyboard()
+       // nextButton.bindToKeyboard()
         shortTermButton.setSelectedColor()
         longTermButton.setDeselectedColor()
     }
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
-        dismissDetail()
+        // dismissDetail()
     }
 
     @IBAction func shortTermButtonWasPressed(_ sender: Any) {
