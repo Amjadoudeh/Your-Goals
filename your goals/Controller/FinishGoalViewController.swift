@@ -1,11 +1,5 @@
-//
-//  FinishGoalViewController.swift
-//  your goals
-//
-//  Created by Amajd Oudeh on 03.07.22.
-//
-
 import UIKit
+import CoreData
 
 class FinishGoalViewController: UIViewController {
 
@@ -32,5 +26,9 @@ class FinishGoalViewController: UIViewController {
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
         dismissDetail()
+    }
+
+    func save(completion: (_ finished: Bool) -> Void) {
+
     }
 }
