@@ -232,7 +232,7 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="V6r-Mf-93B">
                                 <rect key="frame" x="20" y="115.99999999999997" width="350" height="310.33333333333326"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal? " textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Yu-W9-lAb">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="What is your goal?" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="3Yu-W9-lAb">
                                         <rect key="frame" x="0.0" y="0.0" width="350" height="195"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

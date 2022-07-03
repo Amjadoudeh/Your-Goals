@@ -17,7 +17,7 @@ class CreateGoalVCViewController: UIViewController {
     }
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
-        // dismissDetail()
+         dismissDetail()
     }
 
     @IBAction func shortTermButtonWasPressed(_ sender: Any) {
@@ -36,7 +36,7 @@ class CreateGoalVCViewController: UIViewController {
 
     @IBAction func nextButtonWasPressed(_ sender: Any) {
         print("next")
-        if goalTextView.text != "" && goalTextView.text != "What is your goal" {
+        if goalTextView.text != "" && goalTextView.text != "What is your goal?" {
             guard let finishGoalViewController = storyboard?.instantiateViewController(withIdentifier: "FinishGoalViewController") as? FinishGoalViewController else { return }
             finishGoalViewController.initData(description: goalTextView.text!, type: goalType)
             presentDetail(finishGoalViewController)
