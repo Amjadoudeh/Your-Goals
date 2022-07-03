@@ -11,7 +11,7 @@ class CreateGoalVCViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-       // nextButton.bindToKeyboard()
+        // nextButton.bindToKeyboard()
         shortTermButton.setSelectedColor()
         longTermButton.setDeselectedColor()
     }
@@ -36,5 +36,10 @@ class CreateGoalVCViewController: UIViewController {
 
     @IBAction func nextButtonWasPressed(_ sender: Any) {
         print("next")
+        if goalTextView.text != "" && goalTextView.text != "What is your goal" {
+            guard let finishGoalViewController = storyboard?.instantiateViewController(withIdentifier: "FinishGoalViewController") as? FinishGoalViewController else { return }
+            finishGoalViewController.initData(description: goalTextView.text!, type: goalType)
+            presentDetail(finishGoalViewController)
+        }
     }
 }

@@ -330,7 +330,7 @@
         <!--Finish Goal View Controller-->
         <scene sceneID="9Ff-u7-Dli">
             <objects>
-                <viewController id="XwB-Jo-wav" customClass="FinishGoalViewController" customModule="your_goals" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="FinishGoalViewController" id="XwB-Jo-wav" customClass="FinishGoalViewController" customModule="your_goals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Dse-5m-Yeb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
