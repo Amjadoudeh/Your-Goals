@@ -29,4 +29,8 @@ class FinishGoalViewController: UIViewController {
     @IBAction func createGoalButtonWasPressed(_ sender: Any) {
         // Pass data into Core Data Goal Model
     }
+
+    @IBAction func backButtonWasPressed(_ sender: Any) {
+        dismissDetail()
+    }
 }

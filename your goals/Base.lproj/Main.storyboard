@@ -359,6 +359,9 @@
                                         <rect key="frame" x="8" y="44" width="59" height="46"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="plain" image="back"/>
+                                        <connections>
+                                            <action selector="backButtonWasPressed:" destination="XwB-Jo-wav" eventType="touchUpInside" id="4OQ-Pq-3TG"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
