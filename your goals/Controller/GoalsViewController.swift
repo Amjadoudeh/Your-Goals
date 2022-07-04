@@ -83,6 +83,13 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
 }
 
 extension GoalsViewController {
+    func set(progressForGoal progress: Int32, IndexPath indexPath: IndexPath) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+
+        let chosenGoal = goals[indexPath.row]
+
+    }
+
     func removeGoal(atIndexPath indexPath: IndexPath) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
 

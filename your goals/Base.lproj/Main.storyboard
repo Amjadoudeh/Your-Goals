@@ -95,7 +95,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ToP-eJ-Na3">
                                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="27.333333333333332"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="50" id="QjG-bV-0T0"/>
+                                                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="50" id="QjG-bV-0T0"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                                                             <nil key="textColor"/>
@@ -115,7 +115,7 @@
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Type:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XHW-Cg-boV">
                                                                             <rect key="frame" x="0.0" y="0.0" width="50" height="24.666666666666668"/>
                                                                             <constraints>
-                                                                                <constraint firstAttribute="width" constant="50" id="4y0-Hd-T7V"/>
+                                                                                <constraint firstAttribute="width" constant="50" id="d2s-LI-PAk"/>
                                                                             </constraints>
                                                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="18"/>
                                                                             <nil key="textColor"/>
@@ -142,6 +142,22 @@
                                                         <constraint firstItem="APM-0R-fsv" firstAttribute="centerY" secondItem="g56-Cj-jmb" secondAttribute="centerY" id="7pa-J3-Ifj"/>
                                                     </constraints>
                                                 </stackView>
+                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcn-mb-Iey">
+                                                    <rect key="frame" x="0.0" y="29" width="390" height="73"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Goal Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-qZ-AvO">
+                                                            <rect key="frame" x="76" y="8" width="238" height="57"/>
+                                                            <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
+                                                            <color key="textColor" white="1" alpha="0.74536941225165565" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.48965231788079472" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <constraints>
+                                                        <constraint firstItem="doZ-qZ-AvO" firstAttribute="centerX" secondItem="jcn-mb-Iey" secondAttribute="centerX" id="FbX-M1-MVu"/>
+                                                        <constraint firstItem="doZ-qZ-AvO" firstAttribute="centerY" secondItem="jcn-mb-Iey" secondAttribute="centerY" id="p56-FO-5O5"/>
+                                                    </constraints>
+                                                </view>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="g56-Cj-jmb" firstAttribute="centerX" secondItem="akW-Ef-K2c" secondAttribute="centerX" id="JRP-ng-AYJ"/>
@@ -154,6 +170,7 @@
                                             </connections>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="completionView" destination="jcn-mb-Iey" id="vPj-WY-wF0"/>
                                             <outlet property="goalDescriptionLabel" destination="4M1-OX-WBU" id="kiP-mm-tmN"/>
                                             <outlet property="goalProgressLabel" destination="Uby-uU-zOj" id="PZe-Ra-usO"/>
                                             <outlet property="goalStackView" destination="g56-Cj-jmb" id="L1u-WD-Par"/>
