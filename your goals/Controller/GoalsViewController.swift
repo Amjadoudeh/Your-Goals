@@ -7,6 +7,8 @@ class GoalsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
 
+    var goals: [Goal] = []
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -15,6 +17,19 @@ class GoalsViewController: UIViewController {
         tableView.isHidden = false
         tableView.rowHeight = 80.0
 
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.fetch { (complete) in
+            if complete {
+                if goals.count >= 1 {
+                    tableView.isHidden = false
+                } else {
+                    tableView.isHidden = true
+                }
+            }
+
+        }
     }
 
     @IBAction func addGoalButton(_ sender: Any) {
@@ -41,5 +56,22 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
         }
         cell.configureCell(description: "Eat Salad twice a week", type: GoalType.ShortTerm, goalProgressAmount: 2)
         return cell
+    }
+}
+
+extension GoalsViewController {
+    func fetch(completion: (_ complete: Bool) -> Void) {
+        guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
+
+        let fetchRequest = NSFetchRequest(entityName: "Goal")
+
+        do {
+            goals = try managedContext.fetch(fetchRequest)
+            print("data fetched")
+            completion(true)
+        } catch {
+            debugPrint("Could not fetch: \(error.localizedDescription)")
+            completion(false)
+        }
     }
 }
