@@ -28,8 +28,8 @@ class GoalsViewController: UIViewController {
                     tableView.isHidden = true
                 }
             }
-
         }
+        tableView.reloadData()
     }
 
     @IBAction func addGoalButton(_ sender: Any) {
