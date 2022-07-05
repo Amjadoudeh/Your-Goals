@@ -5,7 +5,6 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var goalTypeLabel: UILabel!
     @IBOutlet weak var goalDescriptionLabel: UILabel!
     @IBOutlet weak var goalProgressLabel: UILabel!
-    @IBOutlet weak var goalStackView: UIStackView!
 
     @IBOutlet weak var completionView: UIView!
 
@@ -24,6 +23,6 @@ class GoalCell: UITableViewCell {
 
     func centerGoalCell() {
     // goalStackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-        goalStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
+     //   goalStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
       }
 }

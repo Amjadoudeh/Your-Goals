@@ -24,7 +24,8 @@ class FinishGoalViewController: UIViewController {
         if pointsTextField.text != "" {
             self.save { (complete) in
                 if complete {
-                    dismiss(animated: true, completion: nil)
+                    navigationController?.popToRootViewController(animated: true)
+//                    dismiss(animated: true, completion: nil)
                 }
             }
         }
@@ -40,8 +41,8 @@ class FinishGoalViewController: UIViewController {
 
         goal.goalDescription = goalDescription
         goal.goalType = goalType.rawValue
-        goal.goalCompletionValue = Int32(pointsTextField.text!)!
-        goal.goalProgress = Int32(0)
+        goal.goalCompletionValue = 0
+        goal.goalProgress = Int32(pointsTextField.text!)!
 
         do {
             try managedContext.save()
