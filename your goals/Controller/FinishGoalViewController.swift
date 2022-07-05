@@ -32,7 +32,8 @@ class FinishGoalViewController: UIViewController {
     }
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
-        dismissDetail()
+        // dismissDetail()
+        navigationController?.popToRootViewController(animated: true)
     }
 
     func save(completion: (_ finished: Bool) -> Void) {

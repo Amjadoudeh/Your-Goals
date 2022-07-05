@@ -17,7 +17,8 @@ class CreateGoalVCViewController: UIViewController {
     }
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
-         dismissDetail()
+        // dismissDetail()
+        navigationController?.popToRootViewController(animated: true)
     }
 
     @IBAction func shortTermButtonWasPressed(_ sender: Any) {
