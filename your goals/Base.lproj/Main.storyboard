@@ -122,17 +122,17 @@
                                                     <color key="textColor" red="0.42745098040000001" green="0.73725490199999999" blue="0.38823529410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jcn-mb-Iey">
-                                                    <rect key="frame" x="0.0" y="83.333333969116211" width="390" height="73"/>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jcn-mb-Iey">
+                                                    <rect key="frame" x="0.0" y="0.0" width="390" height="241"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Goal Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-qZ-AvO">
-                                                            <rect key="frame" x="76" y="8" width="238" height="57"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Goal Complete" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="doZ-qZ-AvO">
+                                                            <rect key="frame" x="86.000000000000014" y="100" width="218.33333333333337" height="41"/>
                                                             <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="30"/>
-                                                            <color key="textColor" white="1" alpha="0.74536941225165565" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <color key="textColor" white="1" alpha="0.87670736754966883" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="1" green="0.58431372549019611" blue="0.0" alpha="0.48965231788079472" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <color key="backgroundColor" red="0.90454931972789121" green="0.25156500100040025" blue="0.066353103741496597" alpha="0.48965231788079472" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <constraints>
                                                         <constraint firstItem="doZ-qZ-AvO" firstAttribute="centerX" secondItem="jcn-mb-Iey" secondAttribute="centerX" id="FbX-M1-MVu"/>
                                                         <constraint firstItem="doZ-qZ-AvO" firstAttribute="centerY" secondItem="jcn-mb-Iey" secondAttribute="centerY" id="p56-FO-5O5"/>
@@ -142,10 +142,14 @@
                                             <constraints>
                                                 <constraint firstAttribute="bottomMargin" secondItem="XHW-Cg-boV" secondAttribute="bottom" id="03e-fW-l5u"/>
                                                 <constraint firstItem="4M1-OX-WBU" firstAttribute="leading" secondItem="ToP-eJ-Na3" secondAttribute="trailing" constant="10" id="3R4-a3-NcD"/>
+                                                <constraint firstItem="jcn-mb-Iey" firstAttribute="leading" secondItem="fXv-u5-IOc" secondAttribute="leading" id="3yb-fm-ass"/>
+                                                <constraint firstAttribute="bottom" secondItem="jcn-mb-Iey" secondAttribute="bottom" id="4L9-co-Jfo"/>
                                                 <constraint firstItem="Uby-uU-zOj" firstAttribute="centerY" secondItem="fXv-u5-IOc" secondAttribute="centerY" id="67k-MO-OtN"/>
                                                 <constraint firstAttribute="trailingMargin" secondItem="Uby-uU-zOj" secondAttribute="trailing" id="AwB-vV-9am"/>
                                                 <constraint firstItem="ToP-eJ-Na3" firstAttribute="top" secondItem="fXv-u5-IOc" secondAttribute="topMargin" id="EdH-EW-U3J"/>
                                                 <constraint firstItem="ToP-eJ-Na3" firstAttribute="leading" secondItem="fXv-u5-IOc" secondAttribute="leadingMargin" id="NMx-5Q-VVt"/>
+                                                <constraint firstItem="jcn-mb-Iey" firstAttribute="top" secondItem="fXv-u5-IOc" secondAttribute="top" id="OgL-uc-TtO"/>
+                                                <constraint firstAttribute="trailing" secondItem="jcn-mb-Iey" secondAttribute="trailing" id="R59-xu-noS"/>
                                                 <constraint firstItem="gNk-FA-PkC" firstAttribute="top" secondItem="4M1-OX-WBU" secondAttribute="bottom" id="SvW-qi-aY6"/>
                                                 <constraint firstItem="Uby-uU-zOj" firstAttribute="leadingMargin" relation="greaterThanOrEqual" secondItem="4M1-OX-WBU" secondAttribute="trailing" id="aFH-7K-wQW"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="gNk-FA-PkC" secondAttribute="bottom" id="h1g-BW-jUv"/>
