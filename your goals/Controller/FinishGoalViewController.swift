@@ -4,7 +4,6 @@ import CoreData
 class FinishGoalViewController: UIViewController {
 
     @IBOutlet weak var createGoalButton: UIButton!
-
     @IBOutlet weak var pointsTextField: UITextField!
 
     var goalDescription: String!
@@ -25,14 +24,12 @@ class FinishGoalViewController: UIViewController {
             self.save { (complete) in
                 if complete {
                     navigationController?.popToRootViewController(animated: true)
-//                    dismiss(animated: true, completion: nil)
                 }
             }
         }
     }
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
-        // dismissDetail()
         navigationController?.popToRootViewController(animated: true)
     }
 
