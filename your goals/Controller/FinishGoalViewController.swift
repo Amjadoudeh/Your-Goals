@@ -1,10 +1,9 @@
 import UIKit
 import CoreData
 
-class FinishGoalViewController: UIViewController {
+class FinishGoalViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var createGoalButton: UIButton!
-
     @IBOutlet weak var pointsTextField: UITextField!
 
     var goalDescription: String!
@@ -17,7 +16,7 @@ class FinishGoalViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        pointsTextField.delegate = self
     }
 
     @IBAction func createGoalButtonWasPressed(_ sender: Any) {
@@ -25,14 +24,12 @@ class FinishGoalViewController: UIViewController {
             self.save { (complete) in
                 if complete {
                     navigationController?.popToRootViewController(animated: true)
-//                    dismiss(animated: true, completion: nil)
                 }
             }
         }
     }
 
     @IBAction func backButtonWasPressed(_ sender: Any) {
-        // dismissDetail()
         navigationController?.popToRootViewController(animated: true)
     }
 
@@ -42,8 +39,8 @@ class FinishGoalViewController: UIViewController {
 
         goal.goalDescription = goalDescription
         goal.goalType = goalType.rawValue
-        goal.goalCompletionValue = 0
-        goal.goalProgress = Int32(pointsTextField.text!)!
+        goal.goalCompletionValue = Int32(pointsTextField.text!)!
+        goal.goalProgress = Int32(0)
 
         do {
             try managedContext.save()

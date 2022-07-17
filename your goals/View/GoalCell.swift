@@ -9,7 +9,6 @@ class GoalCell: UITableViewCell {
     @IBOutlet weak var completionView: UIView!
 
     func configureCell(goal: Goal) {
-        centerGoalCell()
         self.goalDescriptionLabel.text = goal.goalDescription
         self.goalTypeLabel.text = goal.goalType
         self.goalProgressLabel.text = String(goal.goalProgress)
@@ -20,9 +19,4 @@ class GoalCell: UITableViewCell {
             self.completionView.isHidden = true
         }
     }
-
-    func centerGoalCell() {
-    // goalStackView.centerXAnchor.constraint(equalTo: self.centerXAnchor).isActive = true
-     //   goalStackView.centerYAnchor.constraint(equalTo: self.centerYAnchor).isActive = true
-      }
 }

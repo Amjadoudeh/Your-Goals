@@ -11,7 +11,6 @@ class GoalsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         tableView.delegate = self
         tableView.dataSource = self
         tableView.isHidden = false
@@ -22,7 +21,7 @@ class GoalsViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         fetchCoreDataObjects()
-
+        tableView.reloadData()
     }
 
     func fetchCoreDataObjects() {
@@ -34,7 +33,7 @@ class GoalsViewController: UIViewController {
                     tableView.isHidden = true
                 }
             }
-            tableView.reloadData()
+// tableView.reloadData()
         }
     }
     @IBAction func addGoalButton(_ sender: Any) {
@@ -72,25 +71,24 @@ extension GoalsViewController: UITableViewDelegate, UITableViewDataSource {
         return .none
     }
 
-    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-
-        let deleteAction = UIContextualAction(style: .destructive, title: "DELETE") { _, _, completion in
-           tableView.deleteRows(at: [indexPath], with: .automatic)
+    func tableView(_ tableView: UITableView, editActionsForRowAt indexPath: IndexPath) -> [UITableViewRowAction]? {
+        let deleteAction = UITableViewRowAction(style: .destructive, title: "DELETE") { (_, indexPath) in
             self.removeGoal(atIndexPath: indexPath)
             self.fetchCoreDataObjects()
-            self.tableView.reloadData()
-            completion(true)
-
+            tableView.deleteRows(at: [indexPath], with: .automatic)
         }
-        let addAction = UIContextualAction(style: .normal, title: "ADD") { _, _, completion in
+
+        let addAction = UITableViewRowAction(style: .normal, title: "ADD 1") { (_, indexPath) in
             self.setProgress(IndexPath: indexPath)
             tableView.reloadRows(at: [indexPath], with: .automatic)
-            self.tableView.reloadData()
-            completion(true)
         }
-        addAction.backgroundColor = UIColor.orange
-        return UISwipeActionsConfiguration(actions: [deleteAction, addAction])
+
+        deleteAction.backgroundColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
+        addAction.backgroundColor = #colorLiteral(red: 0.961445272, green: 0.650790751, blue: 0.1328578591, alpha: 1)
+
+        return [deleteAction, addAction]
     }
+
 }
 
 extension GoalsViewController {
@@ -110,21 +108,18 @@ extension GoalsViewController {
         } catch {
             debugPrint("Could not set progress: \(error.localizedDescription)")
         }
-
     }
 
     func removeGoal(atIndexPath indexPath: IndexPath) {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
 
         managedContext.delete(goals[indexPath.row])
-
+        
         do {
             try managedContext.save()
             print("removed")
-
         } catch {
             debugPrint("Could not remove: \(error.localizedDescription)")
-
         }
     }
 
