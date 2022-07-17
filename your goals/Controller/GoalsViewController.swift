@@ -114,14 +114,12 @@ extension GoalsViewController {
         guard let managedContext = appDelegate?.persistentContainer.viewContext else { return }
 
         managedContext.delete(goals[indexPath.row])
-
+        
         do {
             try managedContext.save()
             print("removed")
-
         } catch {
             debugPrint("Could not remove: \(error.localizedDescription)")
-
         }
     }
 
